@@ -6,8 +6,13 @@
 
 body {
   /* Background ze strony: https://www.toptal.com/designers/subtlepatterns/ */
-  background: url("img/cork-board.png"); 
+  background: url("img/cork-board.png");
+  font-family: 'Roboto', sans-serif; 
   line-height: 1.5;  
+}
+
+h1, h2 {
+  font-family: 'Lora', serif;
 }
 
 header {
@@ -61,6 +66,7 @@ p {
 h2 {
   font-size: 2em;
   font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .date {
@@ -90,7 +96,9 @@ h2 {
 
 a {
   border-radius: 9999px;
+  box-shadow: 2px 2px 5px 5px gray;
   text-decoration: none;
+  text-transform: uppercase;
   padding: 1em 2em;
   color: #fff;
   background-color: rgb(20, 20, 100);
