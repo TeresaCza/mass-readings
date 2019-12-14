@@ -76,11 +76,3 @@ function slideshow() {
   setTimeout(slideshow, 3000);
 }
 slideshow();
-// for (var i=0; i<=10; i++){
-//   images[i].style.display = "block";
-//   setTimeout(function(){
-//     images[i].style.display = "none";
-//   }, 1000);
-
-//   if (i === 10) i=0;
-// }
