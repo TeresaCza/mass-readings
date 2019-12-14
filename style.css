@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* Background ze strony: https://www.toptal.com/designers/subtlepatterns/ */
+  background: url("img/cork-board.png"); 
+  line-height: 1.5;  
+}
+
+header {
+  background-color: rgba(0, 0, 0, .9);
+  height: 100vh;
+  position: relative;
+}
+
+img {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;  
+}
+
+h1 {
+  color: #fff;
+  font-size: 3rem;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;  
+  text-shadow: 5px 5px 15px black, -5px -5px 15px black;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, .8);
+  padding: 15px;
+  text-align: center;
+}
+
+p {  
+  margin-bottom: 2rem;
+}
+
+.italic {
+  font-style: italic;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.date {
+  color: rgb(20, 20, 100);
+  font-weight: 700;
+}
+
+.text {
+  font-size: 1.2rem;
+  width: 80%;
+  margin: 0 auto 2rem;
+  text-align: justify;
+}
+
+.text-psalm {
+  width: 98%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.gospel {  
+  margin-bottom: 3em;
+  font-size: 1.2rem;
+}
+
+
+a {
+  border-radius: 9999px;
+  text-decoration: none;
+  padding: 1em 2em;
+  color: #fff;
+  background-color: rgb(20, 20, 100);
+  transition: background-color 0.3s;
+  margin-bottom: 2rem;
+}
+
+a:hover {
+  background-color: rgb(10, 10, 90);
+}
+
+@keyframes changeOpacity {
+  0% {
+    opacity: 0;
+  }
+  12.5% {
+    opacity: .125;
+  }
+  25% {
+    opacity: .25;
+  }
+  37.5% {
+    opacity: .375;
+  }
+  50% {
+    opacity: .5;
+  }
+  62.5% {
+    opacity: .625;
+  }
+  75% {
+    opacity: .75;
+  }
+  87.5% {
+    opacity: .875;
+  }
+  100% {
+    opacity: 1;
+  }
+}
