@@ -62,7 +62,9 @@ var currentSlide = 0;
 function slideshow() {
 
   for (var i = 0; i < images.length; i++) {
-    images[i].style.display = "none";
+    if (images[i].style.display = "block"){           
+      images[i].style.display = "none";
+    }
   }
   images[currentSlide].style.display = "block";
   images[currentSlide].style.animationName = "changeOpacity";
