@@ -56,7 +56,24 @@ function universalisCallback(data) {
 /* ADVANCED CUSTOMIZATION:
    If you want to have today's readings and the Sunday readings both on the same page, then you will have to call the web site twice, once for each of the two days, and have a different callback each time. This isn't rocket science but it does mean rewriting the Javascript we have given you, so the best thing is to complain to whoever asked you to do it!
    */
-var images = document.querySelectorAll("img");
+var images = document.querySelectorAll("img"),
+    len = images.length,
+    counter = 0;
+
+[].forEach.call( images, function( img ) {
+    if(img.complete)
+      incrementCounter();
+    else
+      img.addEventListener( 'load', incrementCounter, false );
+} );
+
+function incrementCounter() {
+    counter++;
+    if ( counter === len ) {
+        console.log( 'All images loaded!' );
+    }
+}
+
 var currentSlide = 0;
 
 function slideshow() {
