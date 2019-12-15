@@ -94,7 +94,7 @@ h2 {
 }
 
 
-a {
+.btn {
   border-radius: 9999px;
   box-shadow: 2px 2px 5px 5px gray;
   text-decoration: none;
@@ -106,7 +106,7 @@ a {
   margin-bottom: 2rem;
 }
 
-a:hover {
+.btn:hover {
   background-color: rgb(10, 10, 90);
 }
 
